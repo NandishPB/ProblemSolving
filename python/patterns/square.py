@@ -1,10 +1,15 @@
+# class Square:
+#     def pattern(self, n):
+#         for i in range(n):
+#             print("* " * n)
+#         print()
+
 class Square:
     def pattern(self, n):
         for i in range(n):
-            print("* " * n)
-        print()
-
-         
+            for j in range(n):
+                print("*", end = " ")
+            print()       
 
 sol = Square()
 n = 5 
