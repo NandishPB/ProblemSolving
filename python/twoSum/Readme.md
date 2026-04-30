@@ -54,6 +54,34 @@ Now just check:
 
 ---
 
+## DSA Used in This Problem
+
+### Data Structure: Hash Map (Dictionary)
+
+A **hash map** is used to store values along with their indices.
+
+👉 Why use it?
+
+* It allows **fast lookup in O(1) time**
+* Helps avoid checking every pair (which is slow)
+
+### 🔧 How It Is Used
+
+* Store each number as a **key**
+* Store its index as the **value**
+
+```id="hashmap_example"
+hashmap[number] = index
+```
+
+👉 While iterating:
+
+* Check if the required number already exists in the hashmap
+* If yes → we found the pair
+* If no → store current number for future checks
+
+---
+
 ## 🔍 What’s Happening?
 
 For each number:
@@ -86,7 +114,7 @@ Loop through array:
 
 ## ⚙️ Code (Optimized Approach)
 
-```python id="w8t2ml"
+```python
 class Solution:
     def twoSum(self, nums, target):
         hashmap = {}
@@ -105,7 +133,7 @@ print(sol.twoSum([2, 7, 11, 15], 9))
 
 ---
 
-## Key Idea
+## 💡 Key Idea
 
 ```id="c5v8zn"
 Instead of checking every pair,
@@ -116,11 +144,11 @@ store values and check in one pass
 
 ---
 
-## Note
+## ⚠️ Note
 
 If you try checking all pairs:
 
-```python id="r2k9js"
+```python
 for i in range(n):
     for j in range(i+1, n):
 ```
@@ -133,7 +161,7 @@ Time Complexity = O(n²)
 
 ---
 
-### Optimized Approach
+### ✅ Optimized Approach
 
 Using hashmap:
 
