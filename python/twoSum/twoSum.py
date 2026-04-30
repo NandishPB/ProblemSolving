@@ -15,7 +15,8 @@ class TwoSum:
                 if nums[i] + nums[j] == target:
                     return [i,j]
 
-arrlist = list(map(int, input("Enter the Nums ").split()))
+# arrlist = list(map(int, input("Enter the Nums ").split()))
+arrlist = [int(x) for x in input("Enter the Nums").split()]
 target = int(input("Enter the target value "))
 
 solu = TwoSum()
