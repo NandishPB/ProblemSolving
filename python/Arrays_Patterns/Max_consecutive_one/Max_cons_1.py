@@ -20,3 +20,4 @@ class MaxOne:
 
 result = MaxOne()
 result.Maximum_consecutive_one([1,1,0,1,1,1,0,1,1,1,1,0])
+
